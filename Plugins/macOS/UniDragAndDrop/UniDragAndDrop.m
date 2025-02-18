@@ -2,6 +2,8 @@
 #import <Cocoa/Cocoa.h>
 #import "GetDragAndDropFilePath.h"
 
+GetDragAndDropFilePath *dview;
+
 void Initialize(cs_callback callback)
 {
     NSArray *ar = [NSApp orderedWindows];
@@ -9,10 +11,15 @@ void Initialize(cs_callback callback)
     NSView *view = [window contentView];
     
     // Enable DragAndDrop for all screens
-    GetDragAndDropFilePath *dview = [[GetDragAndDropFilePath alloc] initWithFrame:view.frame];
+    dview = [[GetDragAndDropFilePath alloc] initWithFrame:view.frame];
 
     [view addSubview:dview];
     
     // set cs callback Pointer
     [dview setCallback:callback];
+}
+
+bool IsDraging(void)
+{
+    return (bool)[dview isDraging];
 }

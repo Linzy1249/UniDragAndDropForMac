@@ -246,7 +246,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = AAA3T3RLLG;
+				DEVELOPMENT_TEAM = KGKCVJ2CC2;
 				INFOPLIST_FILE = UniDragAndDrop/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_BUNDLE_IDENTIFIER = info.shibuya24.UniDragAndDrop;
@@ -261,7 +261,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = AAA3T3RLLG;
+				DEVELOPMENT_TEAM = KGKCVJ2CC2;
 				INFOPLIST_FILE = UniDragAndDrop/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_BUNDLE_IDENTIFIER = info.shibuya24.UniDragAndDrop;

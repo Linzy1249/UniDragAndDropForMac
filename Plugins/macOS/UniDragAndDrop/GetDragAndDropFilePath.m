@@ -18,9 +18,26 @@
     return NSDragOperationEvery;
 }
 
+- (NSDragOperation)draggingUpdated:(id<NSDraggingInfo>)sender
+{
+    _isDraging = true;
+    
+    return NSDragOperationCopy;
+}
+
+- (void)draggingExited:(id<NSDraggingInfo>)sender
+{
+    _isDraging = false;
+}
+
 - (void)setCallback:(cs_callback) callback
 {
     _callback = callback;
+}
+
+- (bool)isDraging
+{
+    return _isDraging;
 }
 
 - (BOOL)prepareForDragOperation:(id <NSDraggingInfo>)sender
